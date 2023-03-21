@@ -1,0 +1,69 @@
+1. How could you reduce the time to execute some or all of these test cases or if you
+had several sites to test?
+
+- Prioritize test cases: Identify the critical test cases that are essential to ensure the functionality of the system or
+application. Prioritizing these test cases will ensure that they are tested first, reducing the time required for testing.
+
+- Parallel testing: Test cases can be executed concurrently across multiple machines, reducing the time required for testing.
+This can be achieved by using a distributed testing framework or cloud-based testing services.
+
+- Test data management: Test data can be pre-populated or generated automatically, reducing the time required to create
+test data manually. This can be particularly useful for testing scenarios that require a large volume of data.
+
+- Test case reuse: Identify and reuse test cases that are applicable across multiple sites or projects. This can significantly
+reduce the time required for testing while maintaining the same level of quality assurance.
+
+
+
+2. Briefly (a few sentences is fine) describe how you would set up a pipeline on your
+preferred source control management platform to perform continuous integration
+testing of a simple front end web-based application. It could be anything you like eg a
+calculator that outputs the correct results from numbers you input.
+
+- Set up a repository on the preferred source control management platform (e.g., GitHub, Bitbucket).
+- Set up a build server (e.g., Jenkins, CircleCI) and configure it to pull the code from the repository.
+- Configure the build server to run the necessary build steps to create the web application (e.g., compiling the code,
+bundling assets, and generating output files).
+- Set up a test suite that includes unit tests, integration tests, and end-to-end tests for the web application.
+- Configure the build server to run the test suite automatically after each code commit.
+- Set up a notification system to notify the development team if any tests fail.
+- If all tests pass, the build server can deploy the web application to a staging environment for further testing before
+ deployment to production.
+
+
+
+3. Describe briefly how you would run performance testing against a web-based
+application.
+
+- Identify Performance Requirements: The first step is to identify the performance requirements of the application.
+This includes understanding the expected load, concurrency, response time, and throughput.
+- Plan the Test: Plan the test scenarios and define the test objectives, expected results, and success criteria.
+Determine the tools and resources required to execute the test.
+- Prepare Test Data: Prepare the test data that will be used during the performance testing. This should include realistic
+ data sets that are representative of the application's usage patterns.
+- Configure the Test Environment: Configure the test environment to mimic the production environment as closely as possible.
+This includes setting up the necessary hardware, software, and network infrastructure.
+- Execute the Test: Execute the test scenarios and monitor the application's performance metrics. This includes measuring
+response time, throughput, resource utilization, and other key performance indicators.
+- Analyze the Results: Analyze the test results to identify any bottlenecks or performance issues. This may require analyzing
+server logs, network traffic, and other system-level data.
+- Tune and Retest: Address any performance issues identified in the previous step and retest the application. This process
+may need to be repeated until the application meets the performance requirements.
+
+
+
+4. Describe briefly what kind of security testing you might perform against a web-based
+application.
+
+- Security testing of a web-based application would involve performing tests to identify any potential weak spots in the
+application's security. This can involve penetration testing, vulnerability scanning, input validation checks, and more.
+The goal of security testing is to ensure the application is secure enough to protect sensitive data and resist malicious attacks.
+
+
+5. Describe how you might build in exception and error handling to your application
+
+- Exception and error handling is a key component of any application and helps to ensure greater user experience. To build
+ in exception and error handling, I would include code that can detect when an unexpected input is entered, or when an expected
+ output does not match the desired output. The code should then be able to respond appropriately to this kind of input or
+ error by either raising an alert, redirecting to another page, or displaying an error message. Additionally, logging the errors
+ in a log file or database can be helpful in the future for debugging purposes.

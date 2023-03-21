@@ -1,0 +1,45 @@
+Test Plan:
+
+# Browsers and operating systems the tests will be run on.
+ - Test will run on Windows 10 operating systems
+ - Will use firefox and Chrome browsers
+
+
+# Next, a list of test cases should be created that match the requirements of the test suite. The test cases should include verifying the page title,
+taking screenshots, maximizing the browser window, logging in and out, filling in forms, and purchasing the basic package.
+
+1.  Verify Page Title:
+
+Use Selenium to open the URL https://www.ultimateqa.com/automation/ and get the title of the page.
+Compare the actual title with the expected title "Automation Practice - Ultimate QA".
+If the actual title matches the expected title, then the test case passes. Otherwise, it fails.
+
+2.  Take Screenshot:
+
+Use Selenium to take a screenshot of the page.
+Verify that the screenshot is saved in the specified location.
+
+3.  Maximize Browser Window:
+
+Use Selenium to maximize the browser window.
+
+4. Login to the Page:
+
+Use Selenium to click on the "Login automation" link.
+Enter valid login credentials in the username and password fields.
+Click on the sign-in button.
+If a captcha is presented, for now I use selenium wait to manually pass the verification
+Verify that the user is logged in by checking for the presence of the "Products" on the page.
+
+5. Logout from Page:
+
+Use Selenium to click on the sing out button.
+
+5. Fill out Forms:
+Use Selenium to enter valid info in the name and message fields then click on submit
+
+6. Purchase the Basic package
+Use Selenium to click on submit basic package deal
+
+
+# Finally, the tests should be executed and the results should be documented.
